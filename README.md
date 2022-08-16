@@ -1,3 +1,10 @@
+# 项目简介
+使用React编写的云音乐PC Web项目，接口来源于开源的接口
+
+# 完成页面
+- [x] 推荐页面
+- [ ] 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
