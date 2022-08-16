@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { memo } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { HashRouter, useRoutes } from 'react-router-dom'
+import routes from '@/router'
+import store from '@/store'
+import { Provider } from 'react-redux'
+
+import Footer from '@/components/app-footer'
+import Header from '@/components/app-header'
+
+// 渲染路由
+const RouteElement = () => {
+  const element = useRoutes(routes)
+  return element
 }
 
-export default App;
+const App = memo(() => {
+  return (
+    <Provider store={store}>
+      <HashRouter>
+        <Header></Header>
+        <RouteElement />
+        <Footer></Footer>
+      </HashRouter>
+    </Provider>
+  )
+})
+
+export default App
