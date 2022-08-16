@@ -3,7 +3,8 @@
 
 # 完成页面
 - [x] 推荐页面
-- [ ] 
+- [ ] 排行榜页面
+- [ ] 歌单页面
 
 # Getting Started with Create React App
 
