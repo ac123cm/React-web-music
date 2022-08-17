@@ -5,7 +5,8 @@
 - [x] 推荐页面
 - - [ ] 入驻歌手
 - - [ ] 热门主播
- 
+![](https://image-1258607307.cos.ap-guangzhou.myqcloud.com/Obsidian/React项目网易云-推荐页面.jpg)
+
 - [ ] 排行榜页面
 - [ ] 歌单页面
 
